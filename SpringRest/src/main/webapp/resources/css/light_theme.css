@@ -1,0 +1,75 @@
+@CHARSET "UTF-8";
+
+
+*{
+	-webkit-transform: translateZ(0);	
+}
+
+html {
+	height: 100%;
+}
+
+body {
+/* 	background: none repeat scroll 0% 0% #33353C; */
+	background: url("../img/dark_blue_bg.jpg") no-repeat bottom center fixed;
+	background-size: cover;
+	color: whitesmoke;
+}
+
+/* MENU */
+.nav-bar-item {
+	background: rgba(0, 0, 0, 0);
+	color: rgba(255, 255, 255, 0.85);
+}
+
+.nav-bar-item:HOVER {
+	color: rgba(255, 255, 255, 0.9);
+	background: linear-gradient(to right, rgba(0, 0, 0, 0.45), rgba(0, 0, 0, 0));
+}
+
+.nav-bar-big .nav-bar-item:HOVER {
+	color: rgba(255, 255, 255, 0.9);
+	background: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.45), rgba(0, 0, 0, 0));
+}
+
+
+.nav-bar-item.active {
+	color: rgba(255, 255, 255, 1);
+	background: linear-gradient(to right, rgba(0, 0, 0, 0.45), rgba(0, 0, 0, 0));
+}
+/* MENU END*/
+
+/* PAGE */
+
+
+/* PAGE END*/
+
+/* SKILLS PAGE*/
+.skill-block {
+	background:  rgba(0, 0, 0, 0.25);
+}
+
+.skill-block:not(.active):HOVER {
+	transform: scale(1.05);
+	font-size: 1.7em;
+	box-shadow: 0px 5px 7px 1px rgba(0, 0, 0, 0.7);
+}
+
+.skill-block:not(.active):HOVER span{background: linear-gradient(to right, transparent, rgba(0, 0, 0, 0.45), transparent) repeat scroll 0% 0% transparent;}
+/* SKILLS END */
+
+/* ADMIN */
+#admin-pannel.side-pannel {
+	background: rgba(0, 0, 0, 0.35);
+}
+
+.admin-action {
+	border-left: 1px solid rgba(0, 0, 0, 0.5);
+	border-right: 1px solid rgba(0, 0, 0, 0.5);
+	border-bottom: 1px solid rgba(225, 225, 225, 0.5);
+}
+
+.admin-action:HOVER {
+	background: rgba(255, 255, 255, 0.1);
+}
+/* ADMIN END*/
